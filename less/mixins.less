@@ -1,1 +1,32 @@
 // Mixins in here
+
+
+ .custom-layout(@justify, @align) {
+     display: flex;
+     justify-content: @justify;
+     align-items: @align;
+   }
+
+.custom-btn(@bg-color:#2E8B57, @width:200px, @font-color:#fff){
+    display: block;
+    background-color: @bg-color;
+    margin: 0 10px 20px;
+    cursor: pointer;
+    width: @width;
+    height: 45px;
+    font-size: 2rem;
+    border-radius: 10px;
+    color:@font-color;
+    text-align: center;
+    
+    
+    &:hover{
+      background-color:@font-color;
+      color:@bg-color;
+    }}
+
+    .center() {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
